@@ -1,0 +1,32 @@
+# ------------------------------------------------------------------------------
+# CUSTOM
+# ------------------------------------------------------------------------------
+function parse_git_branch {
+	git branch --no-color 2> /dev/null |
+	sed -e '/^[^*]/d' -e 's/* \(.*\)/\ \[\1\]/'
+}
+
+# ------------------------------------------------------------------------------
+# PROMPT
+# ------------------------------------------------------------------------------
+# Displays as user [directory] [git-branch] $
+export PS1="\u \033[0;34m\][\W]\[\033[0m\]\[\033[0;32m\]\$(parse_git_branch) \[\033[0m\]\$ "
+
+# ------------------------------------------------------------------------------
+# CONFIG
+# ------------------------------------------------------------------------------
+# Set starting directory
+cd ~/Code
+
+# Append to bash_history
+shopt -s histappend
+
+# ------------------------------------------------------------------------------
+# CONSTANTS
+# ------------------------------------------------------------------------------
+export HISTCONTROL=ignoredups      # No duplicate lines in the history
+export HISTCONTROL=ignoreboth      # Ignore same sucessive entries
+export HISTSIZE=10000              # Number of lines to keep while running
+export HISTFILESIZE=10000          # Number of lines saved to .bash_history
+export PROMPT_COMMAND='history -a' # Shells write to history immediately
+export CLICOLOR=1                  # Colorizes output of ls and others
