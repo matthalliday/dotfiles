@@ -13,6 +13,7 @@ bind right:shift;ctrl resize +10% +0
 bind left:shift;ctrl  resize -10% +0
 
 # Throw Bindings
-bind up:ctrl;alt;cmd    throw 0 resize
+bind left:ctrl;alt;cmd  throw 0 resize
+bind right:ctrl;alt;cmd throw 1 resize
 bind right:ctrl;alt;cmd throw right resize
 bind left:ctrl;alt;cmd  throw left  resize
