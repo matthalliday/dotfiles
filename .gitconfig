@@ -29,6 +29,7 @@
 	st = status
 	rem = remote -v
 	pom = push origin master
+    prb = pull --rebase origin master
 	ds = diff --stat=160,120
 	dh1 = diff HEAD~1
 
