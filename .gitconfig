@@ -10,26 +10,25 @@
 	ui = true
 [help]
 	autocorrect = true
-[difftool "Kaleidoscope"]
-	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
 [difftool]
 	prompt = false
-[diff]
-	tool = Kaleidoscope
 [push]
 	default = simple
 [alias]
 	aa = add --all
-	br = branch
-	ci = commit
 	amend = commit --amend
+	br = branch
+	brr = branch -r
+	bra = branch -a
+	ci = commit
 	co = checkout
 	di = diff
 	dc = diff --cached
 	st = status
 	rem = remote -v
+	po = push origin
 	pom = push origin master
-    prb = pull --rebase origin master
+	prb = pull --rebase origin master
 	ds = diff --stat=160,120
 	dh1 = diff HEAD~1
 
