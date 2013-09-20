@@ -1,11 +1,12 @@
 [user]
-	name = Matt Halliday
-	email = matthalliday@gmail.com
+	name = <full name>
+	email = <email address>
 [github]
-	user = matthalliday
-	token = github token here
+	user = <github username>
+	token = <github token>
 [core]
 	excludesfile = ~/.gitignore_global
+	autocrlf = input
 [color]
 	ui = true
 [help]
