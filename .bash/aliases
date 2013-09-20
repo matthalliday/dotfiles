@@ -13,7 +13,3 @@ alias cp='cp -i' # Make copy interactive
 alias mv='mv -i' # Make move interactive
 alias rm='rm -i' # Make remove interactive
 alias ..="cd .." # Shortcut to go up one level
-
-# Sass
-alias sass="sass --watch sass:compiled --style expanded --precision 20"
-alias sassc="sass --watch sass:compiled --style compact --precision 20"
