@@ -23,6 +23,16 @@ if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
 endif
 
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required!
+Bundle 'gmarik/vundle'
+
+" Additional bundles
+Bundle 'kien/ctrlp.vim'
+
 filetype plugin indent on
 
 augroup vimrcEx
