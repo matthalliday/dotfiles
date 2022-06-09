@@ -1,0 +1,10 @@
+--css=sass
+--database=postgresql
+--javascript=esbuild
+--skip-action-cable
+--skip-action-mailbox
+--skip-action-text
+--skip-active-storage
+--skip-bootsnap
+--skip-bundle
+--skip-jbuilder
